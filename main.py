@@ -4,7 +4,7 @@ def count_batteries_by_usage(cycles):
     "mediumCount": 0,
     "highCount": 0
   }
-  for charge_cycles in cycles
+  for charge_cycles in cycles:
         if charge_cycles < 0:
             raise Exception("Value cannot be negative")
         if charge_cycles >= 910:
