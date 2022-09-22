@@ -9,7 +9,7 @@ def count_batteries_by_usage(cycles):
             mediumCount.append(cycles[i])
         else:
             highCount.append(cycles[i])
-    print(lowCount)
+  
   return {"lowCount":lowCount,"mediumCount":mediumCount,"highCount":highCount}
   
 
