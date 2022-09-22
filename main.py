@@ -1,16 +1,20 @@
 def count_batteries_by_usage(cycles):
-    lowCount = []
-    highCount=[]
-    mediumCount = []
-    for i in range (len(cycles)):
-        if cycles[i]<410:
-            lowCount.append(cycles[i])
-        elif cycles[i]>410 and cycles[i]<909:
-            mediumCount.append(cycles[i])
-        else:
-            highCount.append(cycles[i])
-  
-  return {"lowCount":lowCount,"mediumCount":mediumCount,"highCount":highCount}
+    dict = {
+    "lowCount": 0,
+    "mediumCount": 0,
+    "highCount": 0
+  }
+  for charge_cycles in cycles
+        if charge_cycles < 0:
+            raise Exception("Value cannot be negative")
+        if charge_cycles >= 910:
+            dict['highCount']+=1
+        elif charge_cycles >= 410:
+            dict['mediumCount']+=1
+        elif charge_cycles >=0:
+            dict['lowCount']+=1
+
+  return dict
   
 
 
