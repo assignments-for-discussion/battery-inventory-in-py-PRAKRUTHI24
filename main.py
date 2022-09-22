@@ -7,7 +7,7 @@ def count_batteries_by_usage(cycles):
   for charge_cycles in cycles:
         if charge_cycles < 0:
             raise Exception("Value cannot be negative")
-        if charge_cycles >= 910:
+        if charge_cycles > 910:
             dict['highCount']+=1
         elif charge_cycles >= 410:
             dict['mediumCount']+=1
